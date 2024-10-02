@@ -1,0 +1,6 @@
+﻿services:
+  pockerbot:
+    image: pockerbot
+    build:
+      context: .
+      dockerfile: PockerBot/Dockerfile

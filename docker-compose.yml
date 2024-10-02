@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  pockerbot:
+    image: pockerbot
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+
+  frontend:
+    image: pockerfrontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:3000"
